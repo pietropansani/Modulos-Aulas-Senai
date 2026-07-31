@@ -9,3 +9,8 @@ Operações Aritiméticas
 
 # QUARTA AULA
 Type() e ISINSTANCE()
+
+---------------------------------
+
+# 31/07
+HTML
