@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Séries Favoritas</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #000000, #2b2b2b);
+            color: white;
+            min-height: 100vh;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 40px;
+            color: #f1f1f1;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        li {
+            background: #161616;
+            border: 1px solid #444;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #ddd;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            transition: 0.3s;
+        }
+
+        li:hover {
+            transform: translateY(-10px);
+            background: #242424;
+            border-color: #888;
+        }
+
+        img {
+            margin-top: 20px;
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+            filter: grayscale(20%);
+            transition: 0.3s;
+        }
+
+        img:hover {
+            filter: grayscale(0%);
+            transform: scale(1.03);
+        }
+
+        @media(max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            img {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Séries Favoritas</h1>
+
+    <ul>
+
+        <li>
+            Dexter
+            <img src="https://poltronanerd.com.br/wp-content/uploads/2020/06/b28117ea-41bc-47fe-93ef-f82a1f31717b.jpg"
+            alt="Dexter Morgan">
+        </li>
+
+        <li>
+            O Mentalista
+            <img src="https://m.media-amazon.com/images/M/MV5BMTQ5OTgzOTczM15BMl5BanBnXkFtZTcwMDM2OTY4MQ@@._V1_FMjpg_UX1000_.jpg"
+            alt="O Mentalista">
+        </li>
+
+        <li>
+            Outer Banks
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU_ZxaQvpNjag35l1aUJ9GPuDs1zDmb15xMHa4uOkic4pItOixqRdf4bn-&s=10"
+            alt="Outer Banks">
+        </li>
+
+        <li>
+            Stranger Things
+            <img src="https://m.media-amazon.com/images/M/MV5BMjEzMDAxOTUyMV5BMl5BanBnXkFtZTgwNzAxMzYzOTE@._V1_.jpg"
+            alt="Stranger Things">
+        </li>
+
+        <li>
+            Brooklyn Nine Nine
+            <img src="https://upload.wikimedia.org/wikipedia/pt/7/71/Brooklyn_Nine-Nine-5.jpg"
+            alt="Brooklyn Nine Nine">
+        </li>
+
+        <li>
+            Prison Break
+            <img src="https://m.media-amazon.com/images/M/MV5BMjE0ODQxNjI2MV5BMl5BanBnXkFtZTYwNTgzMzg3._V1_.jpg"
+            alt="Prison Break">
+        </li>
+
+        <li>
+            You
+            <img src="https://br.web.img3.acsta.net/pictures/18/12/31/02/49/2373131.jpg"
+            alt="You">
+        </li>
+
+    </ul>
+
+</body>
+</html>
+```
