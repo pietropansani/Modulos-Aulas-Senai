@@ -1,143 +1,315 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Séries Favoritas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+<title>Séries Favoritas</title>
 
-        body {
-            background: linear-gradient(135deg, #000000, #2b2b2b);
-            color: white;
-            min-height: 100vh;
-            padding: 40px;
-        }
+<style>
 
-        h1 {
-            text-align: center;
-            font-size: 42px;
-            margin-bottom: 40px;
-            color: #f1f1f1;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-        ul {
-            list-style: none;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
-            margin: auto;
-        }
 
-        li {
-            background: #161616;
-            border: 1px solid #444;
-            border-radius: 15px;
-            padding: 20px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-            color: #ddd;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-            transition: 0.3s;
-        }
+body {
+    background: linear-gradient(135deg, #000, #333);
+    color: white;
+    padding: 40px;
+}
 
-        li:hover {
-            transform: translateY(-10px);
-            background: #242424;
-            border-color: #888;
-        }
 
-        img {
-            margin-top: 20px;
-            width: 100%;
-            height: 350px;
-            object-fit: cover;
-            border-radius: 12px;
-            filter: grayscale(20%);
-            transition: 0.3s;
-        }
+h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
 
-        img:hover {
-            filter: grayscale(0%);
-            transform: scale(1.03);
-        }
 
-        @media(max-width: 600px) {
-            body {
-                padding: 20px;
-            }
+/* Lista das séries */
 
-            h1 {
-                font-size: 30px;
-            }
+.lista-series {
+    max-width: 1000px;
+    margin: auto;
+    list-style: none;
+}
 
-            img {
-                height: 300px;
-            }
-        }
-    </style>
+
+/* Cada série */
+
+.serie {
+    display: flex;
+    gap: 25px;
+    background: #161616;
+    border: 1px solid #444;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+
+.serie:hover {
+    transform: translateY(-5px);
+    background: #222;
+}
+
+
+/* Imagens */
+
+.serie img {
+    width: 180px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* Texto */
+
+.informacoes h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+
+.informacoes p {
+    font-size: 18px;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* Botão */
+
+.botao {
+    background: #555;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.botao:hover {
+    background: white;
+    color: black;
+}
+
+
+
+@media(max-width:700px){
+
+    .serie {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+</style>
+
 </head>
+
 
 <body>
 
-    <h1>Séries Favoritas</h1>
 
-    <ul>
+<h1>🎬 Séries Favoritas</h1>
 
-        <li>
-            Dexter
-            <img src="https://poltronanerd.com.br/wp-content/uploads/2020/06/b28117ea-41bc-47fe-93ef-f82a1f31717b.jpg"
-            alt="Dexter Morgan">
-        </li>
 
-        <li>
-            O Mentalista
-            <img src="https://m.media-amazon.com/images/M/MV5BMTQ5OTgzOTczM15BMl5BanBnXkFtZTcwMDM2OTY4MQ@@._V1_FMjpg_UX1000_.jpg"
-            alt="O Mentalista">
-        </li>
+<ul class="lista-series">
 
-        <li>
-            Outer Banks
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU_ZxaQvpNjag35l1aUJ9GPuDs1zDmb15xMHa4uOkic4pItOixqRdf4bn-&s=10"
-            alt="Outer Banks">
-        </li>
 
-        <li>
-            Stranger Things
-            <img src="https://m.media-amazon.com/images/M/MV5BMjEzMDAxOTUyMV5BMl5BanBnXkFtZTgwNzAxMzYzOTE@._V1_.jpg"
-            alt="Stranger Things">
-        </li>
+<li class="serie">
 
-        <li>
-            Brooklyn Nine Nine
-            <img src="https://upload.wikimedia.org/wikipedia/pt/7/71/Brooklyn_Nine-Nine-5.jpg"
-            alt="Brooklyn Nine Nine">
-        </li>
+<img src="https://poltronanerd.com.br/wp-content/uploads/2020/06/b28117ea-41bc-47fe-93ef-f82a1f31717b.jpg"
+alt="Dexter">
 
-        <li>
-            Prison Break
-            <img src="https://m.media-amazon.com/images/M/MV5BMjE0ODQxNjI2MV5BMl5BanBnXkFtZTYwNTgzMzg3._V1_.jpg"
-            alt="Prison Break">
-        </li>
 
-        <li>
-            You
-            <img src="https://br.web.img3.acsta.net/pictures/18/12/31/02/49/2373131.jpg"
-            alt="You">
-        </li>
+<div class="informacoes">
 
-    </ul>
+<h2>Dexter</h2>
+
+<p>
+Dexter Morgan é um especialista em análise de sangue da polícia de Miami.
+Durante o dia ele ajuda a solucionar crimes, mas à noite segue seu próprio código
+como um justiceiro que caça criminosos que escaparam da justiça.
+</p>
+
+<a class="botao" href="https://pt.wikipedia.org/wiki/Dexter_(s%C3%A9rie_de_televis%C3%A3o)" target="_blank">
+Ver mais
+</a>
+
+</div>
+
+</li>
+
+
+
+<li class="serie">
+
+<img src="https://m.media-amazon.com/images/M/MV5BMTQ5OTgzOTczM15BMl5BanBnXkFtZTcwMDM2OTY4MQ@@._V1_FMjpg_UX1000_.jpg"
+alt="O Mentalista">
+
+
+<div class="informacoes">
+
+<h2>O Mentalista</h2>
+
+<p>
+Patrick Jane é um consultor independente que trabalha com a polícia usando sua
+incrível capacidade de observação e manipulação para resolver crimes misteriosos.
+</p>
+
+<a class="botao" href="https://pt.wikipedia.org/wiki/O_Mentalista" target="_blank">
+Ver mais
+</a>
+
+</div>
+
+</li>
+
+
+
+<li class="serie">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU_ZxaQvpNjag35l1aUJ9GPuDs1zDmb15xMHa4uOkic4pItOixqRdf4bn-&s=10"
+alt="Outer Banks">
+
+
+<div class="informacoes">
+
+<h2>Outer Banks</h2>
+
+<p>
+Um grupo de adolescentes de uma ilha da Carolina do Norte encontra um mapa
+misterioso ligado a um tesouro perdido, enfrentando aventuras, conflitos e perigos.
+</p>
+
+<a class="botao" href="https://pt.wikipedia.org/wiki/Outer_Banks_(s%C3%A9rie_de_televis%C3%A3o)" target="_blank">
+Ver mais
+</a>
+
+</div>
+
+</li>
+
+
+
+<li class="serie">
+
+<img src="https://m.media-amazon.com/images/M/MV5BMjEzMDAxOTUyMV5BMl5BanBnXkFtZTgwNzAxMzYzOTE@._V1_.jpg"
+alt="Stranger Things">
+
+
+<div class="informacoes">
+
+<h2>Stranger Things</h2>
+
+<p>
+Em uma pequena cidade, crianças enfrentam acontecimentos sobrenaturais após o
+desaparecimento de um garoto e a descoberta de uma menina com poderes especiais.
+</p>
+
+<a class="botao" href="https://pt.wikipedia.org/wiki/Stranger_Things" target="_blank">
+Ver mais
+</a>
+
+</div>
+
+</li>
+
+
+
+<li class="serie">
+
+<img src="https://upload.wikimedia.org/wikipedia/pt/7/71/Brooklyn_Nine-Nine-5.jpg"
+alt="Brooklyn Nine-Nine">
+
+
+<div class="informacoes">
+
+<h2>Brooklyn Nine-Nine</h2>
+
+<p>
+Uma comédia policial que acompanha o divertido dia a dia de uma delegacia de
+Nova York, com investigações, amizades e situações engraçadas.
+</p>
+
+<a class="botao" href="https://pt.wikipedia.org/wiki/Brooklyn_Nine-Nine" target="_blank">
+Ver mais
+</a>
+
+</div>
+
+</li>
+
+
+
+<li class="serie">
+
+<img src="https://m.media-amazon.com/images/M/MV5BMjE0ODQxNjI2MV5BMl5BanBnXkFtZTYwNTgzMzg3._V1_.jpg"
+alt="Prison Break">
+
+
+<div class="informacoes">
+
+<h2>Prison Break</h2>
+
+<p>
+Michael Scofield cria um plano detalhado para escapar da prisão e salvar seu
+irmão Lincoln, que foi condenado injustamente.
+</p>
+
+<a class="botao" href="https://pt.wikipedia.org/wiki/Prison_Break" target="_blank">
+Ver mais
+</a>
+
+</div>
+
+</li>
+
+
+
+<li class="serie">
+
+<img src="https://br.web.img3.acsta.net/pictures/18/12/31/02/49/2373131.jpg"
+alt="You">
+
+
+<div class="informacoes">
+
+<h2>You</h2>
+
+<p>
+Joe Goldberg é um homem inteligente e obcecado que ultrapassa limites perigosos
+em suas relações, mostrando o lado sombrio de sua personalidade.
+</p>
+
+<a class="botao" href="https://pt.wikipedia.org/wiki/You_(s%C3%A9rie_de_televis%C3%A3o)" target="_blank">
+Ver mais
+</a>
+
+</div>
+
+</li>
+
+
+</ul>
+
 
 </body>
 </html>
-```
