@@ -56,7 +56,7 @@
             <label for="bio">Sobre Você</label>
             <textarea name="bio" id="bio" rows="3" placeholder="Fale um pouco sobre você..."></textarea><br>
 
-            <label for="linguagem">Linguagem Favorito:</label>
+            <label for="linguagem">Linguagem Favorita:</label>
             <input type="text" name="linguagem" id="linguagem" list="linguagens">
             <datalist id="linguagens">
                 <option value="HTML"></option>
@@ -66,9 +66,26 @@
                 <option value="Java"></option>
                 <option value="C++"></option>
                 <option value="C#"></option>
+            </datalist><br>
 
+            <label for="contato">Contato</label>
+            <address><br>
+                Email: pietropansani038@gmail.Com <br>
+                Telefone: (11)91345-0677
+            </address><br>
 
-            </datalist>
+            <fieldset>
+                <details>
+                    <legend>Outras Informações</legend>
+                    <summary>O que é um formulário HTML?</summary>
+                    <p>Um formulário HTML é utilizado para coletar Informações dos usuários e enviá-las para um servidor.</p>
+                </details>
+
+                <p>O campo <mark>senha</mark> precisa ter pelo menos 6 caracteres</p>
+                <label for="hora-cadastro">Horário preferido para contato:</label>
+                <input type="time" name="hora-cadastro" id="hora-cadastro">
+            </fieldset>
+            <button type="submit">Cadastrar</button>
 
         </fieldset>
 
