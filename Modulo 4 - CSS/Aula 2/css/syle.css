@@ -1,0 +1,71 @@
+ body {
+    background-color: rgb(93, 143, 235);
+}
+
+    h1 {
+color: white;
+    }
+    /* Usar o " color adobe " para paleta de cores */
+
+    /* Lá também tem como fazer uma paleta a partir de uma imagem em "tools" */
+
+    /* RGB com transparência. colocar 0.5 ou qualquer outro número para definir a opacidade da cor.
+    EX: background-color: rgb(93, 143, 235, 0.5)*/
+
+    h2{
+color: white;
+    }
+
+    /* font-family serve para definir uma fonte ao título */
+
+    h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+    /* font-size define o tamanho do título */
+
+    /* PX (pixels) é uma unidade fixa. O tamanho sempre será o mesmo, independente do tamanho da tela */
+
+    h1 {
+        font-size: 40px;
+        }
+
+    h2 {
+         font-size:28px;
+       }
+
+    p {
+        font-size: 20px;
+        font-family: Georgia,'Times New Roman', serif;
+      }
+
+      /*
+      - 2EM - o dobro do tamanho padrão, significa q ele é o multiplicador de tamanho. Também da para colocar com porcentagem. EX: 120% -  20% maior q o tamanho original
+      */
+
+      /* 5VW - 5% da largura da tela / isso faz com que o tamanho do texto se ajuste ao tamanho da tela, MUITO ÚTIL para design responsivo. */
+
+      /* font-weight serve para definir a grosuura do texto.
+
+      - 100 = Super fino
+      - 400 = normal
+      - 700 = negrito
+      - 900 = super negrito
+    */
+
+      p {
+        font-weight: 400;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+
+      /* line-height serve para definir o espaçamento entre as linhas */
+
+      p{
+        line-height: 2em;
+      }

@@ -1,0 +1,40 @@
+body{
+    background-color: rgba(96, 115, 124, 0.904);
+}
+
+h1{
+    color: rgb(0, 153, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color:  rgb(0, 153, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 18px;
+    font-family: Georgia,'Times New Roman', serif;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+  }
+
+        /* SELETORES */
+
+    /* Própria TAG HTML */
+    /* h1, p, span, a .. */
+
+    /* id =  atributo html que adiciona um identificador único, esse identificador pode ser utilizado no css para selecionar-mos o elemento:
+    */
+
+  #parágrafo1{
+    color: azure;
+  }
+
+  /* CLASSES */
+  /* atributos HTML que adiciona um identificador reutilizável na TAG. Esse identificador pode ser utilizado no CSS para seleceionar-mos o(s) elementos(s): */
+
+  .titulo{
+    color: rgb(0, 255, 42);
+  }
