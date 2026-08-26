@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>FlexBox</h1>
+
+    <p>
+        O <strong>Flexbox</strong> é um modelo de layout do CSS que permite organizar elementos em uma página de forma flexível e eficiente. Ele facilita a criação de layouts complexos, alinhando e distribuindo espaço entre os itens dentro de um contêiner.
+    </p>
+
+    <h2>Justify-content</h2>
+    <p>Organiza os itens no eixo horizontal.</p>
+
+    <div class="flex-container space-between">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+                    <!-- Flexbox -->
+        <!--
+        Justify-Content: define o alinhamento horizontal dos itens dentro do contêiner flexível.
+        Flex-Start: alinhar os itens a esquerda
+        Flex-Center: Centraliza os itens horizontalmente
+        Flex-End: alinhar os itens a direita
+        Space-Between: distribuir espaço entre os itens
+        Space-Around: distribuir espaço ao redor dos itens
+        Space-Evenly: distribuir espaço de forma uniforme entre os itens
+        -->
+        <!--
+        Align-Items: define o alinhamento vertical dos itens dentro do contêiner flexível.
+        Flex-Start: alinha os itens no início do eixo vertical.
+        Center: centraliza os itens verticalmente.
+        Flex-End: alinha os itens no final do eixo vertical.
+        Stretch: estica os itens para ocupar a altura disponível.
+        -->
+
+    <h2>Align-items</h2>
+    <p>Organiza os itens no eixo vertical.</p>
+
+    <div class="flex-container align-center">
+        <div class="flex-item pequeno">Item 1</div>
+        <div class="flex-item medio">Item 2</div>
+        <div class="flex-item grande">Item 3</div>
+    </div>
+
+    <h2>Flex-direction</h2>
+    <p>Também é possível alterar a direção dos itens para coluna.</p>
+
+    <div class="flex-container coluna">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+</body>
+</html>

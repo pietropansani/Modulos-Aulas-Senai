@@ -1,0 +1,59 @@
+body {
+
+    background-color: rgb(128, 128, 247)
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(144, 192, 247);
+    width: 1500px;
+    height: 500px;
+}
+
+.box {
+    background-color: rgb(252, 249, 249);
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*<!-- ROW É LINHA (horizontal) E COLUMN É COLUNA (vertical) -->
+    <!-- flexbox -->
+     <!-- justify-content -->
+      <!-- controla como os itens são distribuídos horizontalmente dentro do contêiner flex, quando a direção principal é row -->
+    <!-- Flex-star: alinhar itens a esquerda
+     center: centraliza os itend horizontalmente
+     flex-end: Alinha os itens a direita
+     space-between: distribui os itens igualmente, com o primeiro item no início e o último
+     space-around: distribui os itens igualmente, com espaço ao redor de cada item
+     space-evenly: distribui os itens igualmente, com espaço igual entre eles (inclusive nas extremidades)
+       -->
+
+<!-- align-items -->
+     <!-- flex-start: alinha os itens ao topo do contêiner
+     center: centraliza os itens verticalmente
+     flex-end: alinha os itens à parte inferior do contêiner
+     stretch: estica os itens para preencher a altura do contêiner
+     baseline: alinha os itens pela linha de base do texto
+       -->
+
+        <!-- flex direction -->
+        <!-- row: itens são organizados em uma linha horizontal
+        column: itens são organizados em uma coluna vertical
+        row-reverse: itens são organizados em uma linha horizontal, mas na ordem inversa
+        column-reverse: itens são organizados em uma coluna vertical, mas na ordem inversa
+         */
