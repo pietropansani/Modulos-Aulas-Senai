@@ -6,7 +6,7 @@ body {
 
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: column;
     align-items: center;
     background-color: rgb(144, 192, 247);
     width: 1500px;
